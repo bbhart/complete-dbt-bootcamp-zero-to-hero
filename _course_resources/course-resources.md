@@ -150,10 +150,11 @@ https://brew.sh/
 Here are the commands we execute in this lesson:
 
 ```sh
-create course
+mkdir course
 cd course
-virtualenv venv
+python3 -m venv venv
 . venv/bin/activate
+python3 -m pip install --upgrade pip
 rehash
 pip install dbt-snowflake
 which dbt
